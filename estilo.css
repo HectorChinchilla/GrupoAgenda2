@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 #one{
 	background-color: $blue-dark;
  	background-image: url(http://www.cfdesigner.com/codepen/rocket-page-bkg.png);
@@ -24,7 +25,22 @@
   	text-align: center;
   	width: 100%;
 }
-
 ul{
-   padding: 0; 
 }
+   padding: 0; 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+>>>>>>> Stashed changes
