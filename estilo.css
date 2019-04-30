@@ -25,9 +25,11 @@
   	text-align: center;
   	width: 100%;
 }
+
 ul{
+  padding: 0; 
 }
-   padding: 0; 
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
@@ -43,4 +45,3 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
->>>>>>> Stashed changes
