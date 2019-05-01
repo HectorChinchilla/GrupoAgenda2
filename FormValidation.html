@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css">
+
+    <title></title>
+  </head>
+  <body>
+    <br><h2 style="width:400px; margin-right:auto; margin-left:auto; border:1px;">Formulario</h2><br>
+    <script>
+function validarFormulario() {
+  var nombre = document.forms["miFormulario"]["nombre"].value;
+  if (nombre == "") {
+    alert("DEBES LLENAR TODOS LOS CAMPOS");
+    return false;
+  }
+  var apellido = document.forms["miFormulario"]["apellido"].value;
+  if (apellido == ""){
+    alert("DEBES LLENAR TODOS CAMPOS");
+    return false;
+  }
+}
+</script>
+
+<body>
+
+<form name="miFormulario" onsubmit="return validarFormulario()" method="post" style="width:400px; margin-right:auto; margin-left:auto; border:1px;" >
+  <div class="field">
+  <label class="label">Nombre</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Nombre" name="nombre">
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Apellido</label>
+  <div class="control">
+    <input class="input" type="text" placeholder="Apellido"><br>
+    <br>
+    <input type="submit" name="" value="Enviar">
+  </div>
+</div>
+</form>
+</html>

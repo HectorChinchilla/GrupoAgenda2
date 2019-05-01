@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <div id="panel">
+      <input id="n1" type="text">
+      <input id="n2" type="text">
+      <input id="n3" type="text">
+    </div>
+
+    <script type="text/javascript">
+      $('#panel').keyup(function(){
+        $("#n3").val((parseIn($("#n1").val()) || 0)
+         + (parseInt($("#n2").val)) || 0))
+      });
+    </script>
+
+  </body>
+</html>
